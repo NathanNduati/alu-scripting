@@ -11,8 +11,7 @@ def top_ten(subreddit):
     Prints None if the subreddit is invalid.
     """
     url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
-    # A more specific, custom user-agent string avoids triggering Reddit automated drops
-    headers = {"User-Agent": "ALUScripting-Task1/1.0 (by /u/NathanNduati)"}
+    headers = {"User-Agent": "ALUScripting/1.0 (by /u/NathanNduati)"}
     params = {"limit": 10}
 
     try:
